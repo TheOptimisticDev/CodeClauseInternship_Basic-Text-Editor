@@ -1,0 +1,236 @@
+:root {
+    --background-color: #d1d4d8;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #181717;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #444444;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 10%;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #f6f6f8;
+    background-color: #181717;
+}
+
+.hero {
+    background-color: var(--background-color);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #444444;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 0px;
+}
+
+
+.text-editor-main {
+    width: 1300px;
+    border: 1px solid rgb(219, 219, 219);
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 .3rem 0.9rem rgba(255, 255, 255, 0.15) !important;
+    background-color: #fff;
+}
+
+.options {
+    background-color: #e7eaef;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.my-text-btn {
+    border: none;
+    background-color: #e7eaef;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.my-text-btn:hover {
+    background-color: #0155e6;
+}
+
+#textOutput {
+    width: 100%;
+    min-height: 400px;
+}
+
+footer {
+    color: #070707;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.active {
+    background-color: rgb(67, 126, 255);
+    border-radius: 10%;
+    color: #fff;
+}
+
+.contentOutput {
+    height: 300px;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding-left: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #828080;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #002aff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000449;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 10px;
+    }
+
+    .floating-button {
+        bottom: 50px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo a {
+        font-size: 1.5em;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+    }
+
+    .floating-button {
+        bottom: 30px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
