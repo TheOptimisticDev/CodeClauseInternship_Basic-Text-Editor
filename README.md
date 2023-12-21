@@ -57,6 +57,7 @@ This project is licensed under the [MIT License](LICENSE.md).
 ## Acknowledgments
 
 This project utilizes icons from [Font Awesome](https://fontawesome.com/) for enhancing the user interface.
+Also utilizes icons from [Favicon](https://favicon.io/) for favicon.
 
 ## Contact
 
